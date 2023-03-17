@@ -1,0 +1,24 @@
+#!/bin/bash
+#This script is used for printing multiplication table accoding to the given number
+
+# Input from user
+echo "Enter the number -"
+read n
+
+# initializing i with 1
+i=1
+
+# Looping i, i should be less than
+# or equal to 10
+while [ $i -le 10 ]
+do
+res=`expr $i \* $n`
+
+# printing on console
+echo "$n * $i = $res"
+
+# incrementing i by one
+((++i))
+
+# end of while loop
+done
